@@ -1,0 +1,127 @@
+<head>
+  <!-- Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128186172-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128186172-1');
+</script>
+
+  <!-- load my CSS file -->
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <!-- load my Javascript file -->
+  <script src="js/script.js"></script>
+</head>
+
+
+<body>
+
+  <p class="pi-visible pi-header" id='welcome'>Welcome to 100pi! π
+
+  </p>
+
+  <div class="pi-visible" id="introtext">
+    <p>Hey there!</p>
+    <p>So you'd like to learn pi?<br>
+      Then this website is for you.<br>
+      I'll teach you the first 100 digits of pi step by step.<br>
+      Usually they will be organised in 4-8 number blocks, <br>
+      in a way that made sense to me<br />
+      Every fourth block you'll be asked to submit all of previously learned pi.<br>
+      Dont worry! <br>
+      Its not as complicated as it seems.
+    </p>
+    <div class="test">
+      π
+    </div>
+
+  
+  </div>
+
+  <div class="pi-visible pi-hide-element" id="firstfive">
+    So here we go!<br>
+    These are the first seven digits of pi:<br>
+    <p id='display'></p>
+    I dont really have a special way to remeber these,<br />
+    but you should be able to by just looking at them.
+  </div>
+
+  <div class="pi-visible pi-hide-element" id="firstuserinput">
+    Now that you have memorised those digits,<br />
+    please submit them below. <br>
+    (dont forget the dot)<br>
+
+    <form id="userInput">
+      <input type="text" id="userInput1" value="" class="input">
+    </form>
+    <button class="pi-submit" onclick="evaluateField()"> Submit <svg class="pi-airplane" width="20" height="15" viewBox="0 0 7 12">
+        <path d="M5.569 5.994L0 .726.687 0l6.336 5.994-6.335 6.002L0 11.27z"></path>
+      </svg> </button>
+
+
+  </div>
+
+  <div id='correct' class="pi-visible pi-hide-element">
+    Good job!<br>
+    Your next digits are:<br>
+    <p id='fourthblock'></p>
+    <p id='nextDigits'></p>
+    <button id='gotitbuttonloop' class='pi-visibleBtn' type="button" onclick="onGotItLoopBtnClick()">Got it! </button>
+  </div>
+
+
+
+  <div class="pi-visible pi-hide-element" id='tryagaintext'>
+    Those weren't the right Numbers!
+    <button id='tryagain' class="pi-tryagain" onclick="ontryagainBtnClick()">
+      Try again
+    </button>
+  </div>
+
+  <button id='tryagain' class="pi-tryagain" onclick="ontryagainBtnClick()">
+    Try again
+  </button>
+
+
+
+  <div class="pi-visible pi-hide-element" id='wrongtext'>
+    You may have forgotten the numbers, <br />
+    That's not a problem! <br />
+    Here they are again :
+    <p id='again'></p>
+
+    <button class='pi-visibleBtn' type="button" onclick="onGotItBtnClick()">Got it! </button>
+  </div>
+
+
+
+  <button id='letsgobutton' class="pi-visibleBtn " type="button" onclick="onGoBtnClick()">Let's go! </button>
+
+
+  <div>
+    <button id='back' class='pi-hiddenBtn pi-hide-element' type="button" onclick="onBackBtnClick()">
+      <svg class="pi-backarrow" width="16" height="14" viewBox="0 0 16 14">
+        <path d="M4.044 8.003l4.09 3.905-1.374 1.453-6.763-6.356L6.759.639 8.135 2.09 4.043 6.003h11.954v2H4.044z"></path>
+      </svg>
+      Back
+    </button>
+
+    <button id='gotitbutton' class='pi-hiddenBtn pi-hide-element' type="button" onclick="onGotItBtnClick()">Got it! </button>
+  </div>
+
+
+  <div id="end" class="pi-hidden">
+  Thats it!<br />
+  You can now proudly recite pi, <br />
+  or at least you can enjoy a good random 100 digits,<br />
+  that will probably never be of use to you.<br />
+  I hope you enjoyed it.
+
+
+    <img class="endimage" src="images/end.jpg" height="200px" width="300px" />
+  </div>
+
+</body>

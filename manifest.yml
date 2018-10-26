@@ -1,0 +1,5 @@
+---
+applications:
+- name: 100-pi
+  random-route: true
+  memory: 256M

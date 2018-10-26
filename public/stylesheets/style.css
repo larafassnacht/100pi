@@ -1,0 +1,216 @@
+.pi-hidden {
+  margin-top: 200px;
+  display: none;
+  text-align: center;
+  font-size: 30px;
+  font-family: inherit;
+  color:#cdd1d4;
+}
+
+.pi-visible {
+  display: block;
+  text-align: center;
+  margin-top: 6%;
+  font-size: 35px;
+  color:#cdd1d4;
+
+}
+
+.pi-header {
+  font-family: fantasy;
+  font-size: 50px;
+}
+
+#introtext.pi-visible {
+  margin-top: 0;
+  font-family: inherit;
+}
+
+.pi-hide-element {
+  display: none;
+}
+
+.pi-visibleBtn, .pi-hiddenBtn {
+  color: white;
+  padding: 20px;
+  background: linear-gradient(grey,black);
+  border-radius: 15%;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 48%;
+  width: 150px ;
+}
+
+
+/* to turn the button green on hover */
+.pi-visibleBtn:hover {
+  cursor: pointer;
+  background: linear-gradient(green,black);
+}
+
+#back:hover {
+  cursor: pointer;
+  background: linear-gradient(red,black);
+}
+
+#gotitbutton:hover {
+  cursor: pointer;
+  background: linear-gradient(green,black);
+}
+
+#tryagain:hover{
+  cursor: pointer;
+  background: linear-gradient(black,#e65100 );
+
+}
+ .pi-tryagain{
+   display: none;
+   background-image:linear-gradient(red, black);
+   padding: 25px;
+   color: white;
+   font-size: 20px;
+   border-radius: 15%;
+   margin-left: 48%;
+  margin-top: 20px;
+ }
+
+ body {
+   background-image:url('../images/cloud.jpg');
+   background-size: cover;
+ }
+
+
+.pi-submit{
+  background-image: linear-gradient(black,#1b5e20);
+  padding: 25px;
+  border-radius: 15%;
+  color: white;
+  font-size: 20px;
+}
+
+.pi-submit:hover{
+  cursor: pointer;
+  background: linear-gradient(#00e676,black)
+
+
+}
+
+.input {
+margin-top: 30px;
+  height: 60px;
+  width: 350px;
+  background-image: linear-gradient(grey,white);
+  font-size: 25px;
+  border-style: solid;
+  border-width: medium;
+  border-color: inherit;
+}
+
+.pi-backarrow {
+  fill: white;
+}
+
+.pi-airplane{
+  fill: white;
+}
+
+.test  {
+  width: 80px;
+	height: 80px;
+  font-size: 70px;
+
+animation-name: test;
+animation-duration: 60s;
+
+animation-iteration-count: infinite;
+position: absolute;
+animation-timing-function: linear;
+
+}
+
+.test2 {
+ display: none;
+  width: 80px;
+	height: 80px;
+  font-size: 70px;
+  background-color: blue;
+  animation-name: test2;
+  animation-duration: 5s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  position: absolute;
+  animation-timing-function: linear;
+}
+
+
+@keyframes test {
+  0% { left: 0px; top:70%}
+  2%{ left:133px; top:40%}
+  4% { left:266px; top:49%;}
+  6% {left:399px; top:3s5%}
+  8% {left:532px; top:40%}
+  10%{left:665px; top:85%}
+  12% {left: 799px; top:50%}
+  14%{left:933px; top:60%}
+  16% {left:1066px; top:25%}
+  18% {left:1199px; top:85%}
+  20% {left:1333px; top:10%}
+  25%{left:712px; top:70%}
+  27% { left:500px; top:50%}
+  29%{ left:333px; top:10%}
+  31% { left:266px; top:20%;}
+  26% {left:399px; top:15%}
+  35% {left:532px; top:60%}
+  37%{left:290px; top:35%}
+  39% {left: 699px; top:50%}
+  40%{left:933px; top:60%}
+  42% {left:1066px; top:75%}
+  44% {left:1199px; top:15%}
+  46% {left:1333px; top:90%}
+  48%{left:900px; top:95%}
+  50% { left:547; top:5%}
+  54%{ left:233px; top:10%}
+  56% { left:266px; top:20%;}
+  58% {left:399px; top:60%}
+  60% {left:532px; top:40%}
+  62%{left:90px; top:35%}
+  64% {left: 799px; top:50%}
+  66%{left:933px; top:60%}
+  68% {left:1066px; top:75%}
+  70% {left:1199px; top:30%}
+  72% {left:1333px; top:40%}
+  74%{left:1200px; top:20%}
+  76% { left: 89px; top:10%}
+  80%{ left:133px; top:10%}
+  82% { left:266px; top:20%;}
+  84% {left:399px; top:15%}
+  86% {left:532px; top:30%}
+  88%{left:665px; top:35%}
+  90% {left: 799px; top:50%}
+  92%{left:933px; top:60%}
+  94% {left:1066px; top:65%}
+  96% {left:1199px; top:80%}
+  98% {left:1333px; top:90%}
+  100%{left:100%; top:100%}
+}
+
+/*@keyframes test2 {
+  0% {background-color: blue; left: 10px; top:0px}
+  9%{background-color: purple;left:10px; top:133px}
+  18% {background-color: green; left:10px; top:266px}
+  26% {background-color: yellow;left:10px; top:399px}
+  35% {background-color: orange;left:10px; top:532px}
+  44%{background-color: red;left:10px; top:665px}
+  52% {background-color: blue; left: 10px; top:799px}
+  60%{background-color: purple; left:10px; top:933px}
+  69% {background-color: green; left:10px; top:1066px}
+  78% {background-color: yellow;left:10px; top:1099px}
+  87% {background-color: orange;left:10px; top:1250px}
+  100%{background-color: red;left:10px; top:00}
+}*/
+
+.endimage {
+margin-top: 300px;
+margin-left: 0px;
+position: absolute;
+}
